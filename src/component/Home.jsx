@@ -25,14 +25,19 @@ const Home = () => {
         });
     }
 
+    function checkScrollHeight() {
+        // console.log(window.scrollY)
+        if (window.scrollY > 700) {
+            setShowTopBtn(true);
+        } else {
+            setShowTopBtn(false);
+        }
+    }
     useEffect(() => {
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 700) {
-                setShowTopBtn(true);
-            } else {
-                setShowTopBtn(false);
-            }
-        });
+        window.addEventListener('scroll', checkScrollHeight);
+        return () => {
+            window.removeEventListener("scroll", checkScrollHeight)
+        }
     }, []);
 
     // const htmlContent = "&lt;p&gt;Hello, world!&lt;/p&gt;";
