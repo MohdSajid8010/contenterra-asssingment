@@ -1,0 +1,37 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 0px 40px;
+    background-color: white;
+    z-index: 1;
+    box-shadow:  0px 0px 1px gray;
+}
+.imgBox{
+    height: 60px;
+}
+.imgBox img{
+    height: 100%;
+    width: 100%;
+}
+
+.navbar button{
+    background-color: rgb(253, 87, 27);
+    border: none;
+    color: white;
+}
+
+@media (max-width:600px){
+    .navbar{
+       
+        padding: 0px 10px;
+       
+    }
+    .imgBox{
+        height: 50px;
+    }
+}

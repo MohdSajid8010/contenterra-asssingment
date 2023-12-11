@@ -1,0 +1,123 @@
+.home {
+    /* border: 2px solid red; */
+}
+
+.one-item {
+    margin: 80px 0px;
+    padding: 10px;
+    border-radius: 10px;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: all 0.5s;
+    background-color: #b0d8eb;
+    /* background-color: #9e9e9e; */
+    /* overflow-wrap: break-word; */
+    overflow: scroll;
+}
+
+.one-item h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+}
+
+.md {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 10px;
+    overflow-wrap: break-word;
+
+}
+
+pre {
+    overflow-wrap: break-word;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    overflow: scroll;
+
+}
+
+p {
+    overflow-wrap: break-word;
+
+}
+
+code {
+    overflow-wrap: break-word;
+
+    font-family: 'Courier New', monospace;
+    /* background-color: #f4f4f4; */
+    /* padding: 0.5em; */
+    /* display: block; */
+    /* overflow-x: auto; */
+    color: #333;
+    width: 100%;
+}
+
+
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 10px;
+}
+
+.scoreDiv {
+
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+
+.scoreDiv:hover {
+    border-color: rgb(253, 87, 27);
+}
+
+.scoreDiv a:hover {
+    background-color: #f9f9f9;
+    text-decoration: none;
+
+
+}
+
+.showTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:900px) {
+    .one-item h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:600px) {
+    h1 {
+        font-size: 17px;
+        text-align: center;
+        margin: 0px;
+        margin-bottom: 5px;
+    }
+
+    .btn-container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
